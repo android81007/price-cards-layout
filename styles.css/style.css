@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: #141b1c;
+}
+
+.price-tibles {
+  display: flex;
+}
+
+.price-card {
+  background-color: #334247;
+  max-width: 380px;
+  min-height: 770px;
+  margin: 115px 18px 115px 132px;
+}
+.price-card_title {
+  width: 106px;
+  height: 67px;
+  margin: 32px 137px 31px 137px;
+  text-align: center;
+}
+.price-card_title-name {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+.price-card_title-subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.price-card_price {
+  width: 100%;
+  min-height: 105px;
+  background-color: #5bb189;
+  text-align: center;
+}
+.price-card_price-text {
+  line-height: 105px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 55px;
+}
+.price-card_description {
+  margin: 40px 26px;
+  font-weight: light;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

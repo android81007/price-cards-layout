@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: #141b1c;
+}
+
+@import 'variables.scss';
+
+.price-tibles {
+  display: flex;
+}
+
+.price-card {
+  background-color: #334247;
+  max-width: 380px;
+  min-height: 770px;
+  margin: 115px 18px 115px 132px;
+
+  &_title {
+    width: 106px;
+    height: 67px;
+    margin: 32px 137px 31px 137px;
+    text-align: center;
+
+    &-name {
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+    }
+    &-subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+  &_price {
+    width: 100%;
+    min-height: 105px;
+    background-color: #5bb189;
+    text-align: center;
+
+    &-text {
+      line-height: 105px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 55px;
+    }
+  }
+  &_description {
+    margin: 40px 26px;
+    font-weight: light;
+    font-size: 15px;
+    color: #ffffff;
+  }
+} 
