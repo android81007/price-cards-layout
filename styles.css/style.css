@@ -8,17 +8,20 @@ html {
 
 body {
   background-color: #141b1c;
+  display: flex;
+  height: 100vh;
 }
 
 .price-tibles {
   display: flex;
+  column-gap: 18px;
+  margin: auto;
 }
 
 .price-card {
   background-color: #334247;
   max-width: 380px;
   min-height: 770px;
-  margin: 115px 18px 115px 132px;
 }
 .price-card_title {
   width: 106px;
@@ -55,6 +58,63 @@ body {
   font-weight: light;
   font-size: 15px;
   color: #ffffff;
+  text-align: center;
+}
+.price-card_options-list {
+  list-style: none;
+  color: #ffffff;
+  line-height: 50px;
+  padding-left: 0;
+}
+.price-card li:nth-child(odd) {
+  background-color: #2a3438;
+}
+.price-card li img {
+  width: 15px;
+  height: 13px;
+  margin: 0 18px 0 19px;
+}
+.price-card_order-btn {
+  width: 156px;
+  height: 40px;
+  background-color: #5bb189;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 39px 112px 40px;
+  display: block;
+}
+
+.card-two {
+  position: relative;
+  overflow: visible;
+}
+.card-two_title {
+  width: 171px;
+  height: 67px;
+  margin: 32px 104px 31px 105px;
+}
+.card-two_badge {
+  width: 123px;
+  height: 123px;
+  position: absolute;
+  z-index: 1;
+  top: -18px;
+  right: -18px;
+}
+.card-two_price, .card-two_btn {
+  background-color: #3a6ba5;
+}
+
+.three-card_title {
+  width: 183px;
+  height: 67px;
+  margin: 32px 98px 31px 99px;
+}
+.three-card_price, .three-card_btn {
+  background-color: #ec632a;
 }
 
 /*# sourceMappingURL=style.css.map */

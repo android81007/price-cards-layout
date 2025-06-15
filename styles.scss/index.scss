@@ -1,3 +1,5 @@
+@use 'variables';
+
 * {
   box-sizing: border-box;
 }
@@ -8,19 +10,20 @@ html {
 
 body {
   background-color: #141b1c;
+  display: flex;
+  height: 100vh;
 }
-
-@import 'variables.scss';
 
 .price-tibles {
   display: flex;
+  column-gap: 18px;
+  margin: auto;
 }
 
 .price-card {
   background-color: #334247;
   max-width: 380px;
   min-height: 770px;
-  margin: 115px 18px 115px 132px;
 
   &_title {
     width: 106px;
@@ -32,13 +35,13 @@ body {
       font-size: 35px;
       line-height: 43px;
       font-weight: bold;
-      color: #ffffff;
+      color: variables.$color-white;
       margin: 0;
     }
     &-subtitle {
       font-size: 20px;
       line-height: 24px;
-      color: #ffffff;
+      color: variables.$color-white;
     }
   }
   &_price {
@@ -49,7 +52,7 @@ body {
 
     &-text {
       line-height: 105px;
-      color: #ffffff;
+      color: variables.$color-white;
       font-weight: bold;
       font-size: 55px;
     }
@@ -58,6 +61,73 @@ body {
     margin: 40px 26px;
     font-weight: light;
     font-size: 15px;
-    color: #ffffff;
+    color: variables.$color-white;
+    text-align: center;
   }
-} 
+  &_options-list {
+    list-style: none;
+    color: variables.$color-white;
+    line-height: 50px;
+    padding-left: 0;
+  }
+
+  li:nth-child(odd) {
+    background-color: #2a3438;
+  }
+
+  li img {
+    width: 15px;
+    height: 13px;
+    margin: 0 18px 0 19px;
+  }
+
+  &_order-btn {
+    width: 156px;
+    height: 40px;
+    background-color: #5bb189;
+    color: variables.$color-white;
+    border: none;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 39px 112px 40px;
+    display: block;
+  }
+}
+
+.card-two {
+  position: relative;
+  overflow: visible;
+
+  &_title {
+    width: 171px;
+    height: 67px;
+    margin: 32px 104px 31px 105px;
+  }
+
+  &_badge {
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    right: -18px;
+  }
+
+  &_price,
+  &_btn {
+    background-color: #3a6ba5;
+  }
+}
+
+.three-card {
+  &_title {
+    width: 183px;
+    height: 67px;
+    margin: 32px 98px 31px 99px;
+  }
+  &_price,
+  &_btn {
+    background-color: #ec632a;
+  }
+}
