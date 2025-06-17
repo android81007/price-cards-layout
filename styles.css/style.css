@@ -59,6 +59,7 @@ body {
   color: #ffffff;
   line-height: 50px;
   padding-left: 0;
+  font-size: 15px;
 }
 .price-card li:nth-child(odd) {
   background-color: #2a3438;
