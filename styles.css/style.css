@@ -23,38 +23,38 @@ body {
   max-width: 380px;
   min-height: 770px;
 }
-.price-card_title {
+.price-card__title {
   width: 106px;
   height: 67px;
   margin: 32px 137px 31px 137px;
   text-align: center;
 }
-.price-card_title-name {
+.price-card__title-name {
   font-size: 35px;
   line-height: 43px;
   font-weight: bold;
   color: #ffffff;
   margin: 0;
 }
-.price-card_title-subtitle {
+.price-card__title-subtitle {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
 }
-.price-card_price-text {
+.price-card__price-text {
   line-height: 105px;
   color: #ffffff;
   font-weight: bold;
   font-size: 55px;
 }
-.price-card_description {
+.price-card__description {
   margin: 40px 26px;
   font-weight: light;
   font-size: 15px;
   color: #ffffff;
   text-align: center;
 }
-.price-card_options-list {
+.price-card__options-list {
   list-style: none;
   color: #ffffff;
   line-height: 50px;
@@ -68,7 +68,7 @@ body {
   height: 13px;
   margin: 0 18px 0 19px;
 }
-.price-card_order-btn {
+.price-card__order-btn {
   width: 156px;
   height: 40px;
   background-color: #5bb189;
@@ -81,14 +81,14 @@ body {
   display: block;
 }
 
-.price-card:nth-child(1) .price-card_price {
+.price-card:nth-child(1) .price-card__price {
   width: 100%;
   min-height: 105px;
   background-color: #5bb189;
   text-align: center;
 }
 
-.price-card:nth-child(2) .price-card_price {
+.price-card:nth-child(2) .price-card__price {
   background-color: #3a6ba5;
   text-align: center;
 }
@@ -97,12 +97,12 @@ body {
   position: relative;
   overflow: visible;
 }
-.card-two_title {
+.card-two__title {
   width: 171px;
   height: 67px;
   margin: 32px 104px 31px 105px;
 }
-.card-two_badge {
+.card-two__badge {
   width: 123px;
   height: 123px;
   position: absolute;
@@ -110,22 +110,23 @@ body {
   top: -18px;
   right: -18px;
 }
-.card-two_btn {
+.card-two__btn {
   background-color: #3a6ba5;
 }
 
-.price-card:nth-child(3) .price-card_price {
+.price-card:nth-child(3) .price-card__price {
   background-color: #ec632a;
   text-align: center;
 }
 
-.three-card_title {
+.price-card:nth-child(3) .price-card__order-btn {
+  background-color: #ec632a;
+}
+
+.three-card__title {
   width: 183px;
   height: 67px;
   margin: 32px 98px 31px 99px;
-}
-.three-card_btn {
-  background-color: #ec632a;
 }
 
 /*# sourceMappingURL=style.css.map */

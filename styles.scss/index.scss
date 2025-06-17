@@ -25,7 +25,7 @@ body {
   max-width: 380px;
   min-height: 770px;
 
-  &_title {
+  &__title {
     width: 106px;
     height: 67px;
     margin: 32px 137px 31px 137px;
@@ -46,21 +46,21 @@ body {
   }
   
 
-    &_price-text {
+    &__price-text {
       line-height: 105px;
       color: variables.$color-white;
       font-weight: bold;
       font-size: 55px;
     }
   
-  &_description {
+  &__description {
     margin: 40px 26px;
     font-weight: light;
     font-size: 15px;
     color: variables.$color-white;
     text-align: center;
   }
-  &_options-list {
+  &__options-list {
     list-style: none;
     color: variables.$color-white;
     line-height: 50px;
@@ -77,7 +77,7 @@ body {
     margin: 0 18px 0 19px;
   }
 
-  &_order-btn {
+  &__order-btn {
     width: 156px;
     height: 40px;
     background-color: #5bb189;
@@ -94,7 +94,7 @@ body {
 // card-one -------------------------------------------
 
 
-.price-card:nth-child(1) .price-card_price {
+.price-card:nth-child(1) .price-card__price {
     width: 100%;
     min-height: 105px;
     background-color: #5bb189;
@@ -103,7 +103,7 @@ body {
 
 
 // card-two -------------------------------------------
-.price-card:nth-child(2) .price-card_price {
+.price-card:nth-child(2) .price-card__price {
   background-color: #3a6ba5;
   text-align: center;
 
@@ -113,13 +113,13 @@ body {
   position: relative;
   overflow: visible;
 
-  &_title {
+  &__title {
     width: 171px;
     height: 67px;
     margin: 32px 104px 31px 105px;
   }
 
-  &_badge {
+  &__badge {
     width: 123px;
     height: 123px;
     position: absolute;
@@ -128,7 +128,7 @@ body {
     right: -18px;
   }
 
-  &_btn {
+  &__btn {
     background-color: #3a6ba5;
   }
 }
@@ -136,19 +136,21 @@ body {
 
 // card-three -----------------------------------
 
-.price-card:nth-child(3) .price-card_price {
+.price-card:nth-child(3) .price-card__price {
   background-color: #ec632a;
   text-align: center;
 
 }
+.price-card:nth-child(3) .price-card__order-btn {
+    background-color: #ec632a;
+  }
+
 .three-card {
-  &_title {
+  &__title {
     width: 183px;
     height: 67px;
     margin: 32px 98px 31px 99px;
   }
  
-  &_btn {
-    background-color: #ec632a;
-  }
+  
 }
