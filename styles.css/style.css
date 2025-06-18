@@ -79,7 +79,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 20px;
-  font-weight: 400;
+  font-weight: regular;
   font-size: 14px;
   margin: 39px 112px 40px;
   display: block;
@@ -108,10 +108,9 @@ body {
   margin: 32px 104px 31px 105px;
 }
 .card-two__badge {
-  width: 123px;
+  width: 122px;
   height: 123px;
   position: absolute;
-  z-index: 1;
   top: -18px;
   right: -18px;
 }

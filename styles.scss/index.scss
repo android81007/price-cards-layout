@@ -44,15 +44,14 @@ body {
       color: variables.$color-white;
     }
   }
-  
 
-    &__price-text {
-      line-height: 105px;
-      color: variables.$color-white;
-      font-weight: bold;
-      font-size: 55px;
-    }
-  
+  &__price-text {
+    line-height: 105px;
+    color: variables.$color-white;
+    font-weight: bold;
+    font-size: 55px;
+  }
+
   &__description {
     margin: 40px 26px;
     font-weight: light;
@@ -88,30 +87,26 @@ body {
     color: variables.$color-white;
     border: none;
     border-radius: 20px;
-    font-weight: 400;
+    font-weight: regular;
     font-size: 14px;
     margin: 39px 112px 40px;
     display: block;
     padding: 0;
   }
-
 }
 // card-one -------------------------------------------
 
-
 .price-card:nth-child(1) .price-card__price {
-    width: 100%;
-    min-height: 105px;
-    background-color: #5bb189;
-    text-align: center;
+  width: 100%;
+  min-height: 105px;
+  background-color: #5bb189;
+  text-align: center;
 }
-
 
 // card-two -------------------------------------------
 .price-card:nth-child(2) .price-card__price {
   background-color: #3a6ba5;
   text-align: center;
-
 }
 
 .card-two {
@@ -125,10 +120,9 @@ body {
   }
 
   &__badge {
-    width: 123px;
+    width: 122px;
     height: 123px;
     position: absolute;
-    z-index: 1;
     top: -18px;
     right: -18px;
   }
@@ -138,17 +132,15 @@ body {
   }
 }
 
-
 // card-three -----------------------------------
 
 .price-card:nth-child(3) .price-card__price {
   background-color: #ec632a;
   text-align: center;
-
 }
 .price-card:nth-child(3) .price-card__order-btn {
-    background-color: #ec632a;
-  }
+  background-color: #ec632a;
+}
 
 .three-card {
   &__title {
@@ -156,6 +148,4 @@ body {
     height: 67px;
     margin: 32px 98px 31px 99px;
   }
- 
-  
 }
