@@ -54,6 +54,9 @@ body {
   color: #ffffff;
   text-align: center;
 }
+.price-card__description-text {
+  line-height: 18px;
+}
 .price-card__options-list {
   list-style: none;
   color: #ffffff;
@@ -75,11 +78,12 @@ body {
   background-color: #5bb189;
   color: #ffffff;
   border: none;
-  border-radius: 16px;
+  border-radius: 20px;
   font-weight: 400;
   font-size: 14px;
   margin: 39px 112px 40px;
   display: block;
+  padding: 0;
 }
 
 .price-card:nth-child(1) .price-card__price {
