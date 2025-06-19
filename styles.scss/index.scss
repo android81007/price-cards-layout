@@ -28,7 +28,7 @@ body {
   &__title {
     width: 106px;
     height: 67px;
-    margin: 32px 137px 31px 137px;
+    margin: 32px 137px 34px 137px;
     text-align: center;
 
     &-name {
@@ -58,6 +58,7 @@ body {
     font-size: 15px;
     color: variables.$color-white;
     text-align: center;
+
     &-text {
       line-height: 18px;
     }
@@ -111,20 +112,27 @@ body {
 
 .card-two {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 
   &__title {
     width: 171px;
     height: 67px;
-    margin: 32px 104px 31px 105px;
+    margin: 32px 104px 34px 105px;
   }
 
-  &__badge {
-    width: 122px;
-    height: 123px;
+  &__promotion {
     position: absolute;
-    top: -18px;
-    right: -18px;
+    height: 25px;
+    width: 147px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(220, 63, 69, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    top: 31px;
+    right: -30px;
   }
 
   &__btn {
@@ -146,6 +154,6 @@ body {
   &__title {
     width: 183px;
     height: 67px;
-    margin: 32px 98px 31px 99px;
+    margin: 32px 98px 34px 99px;
   }
 }
