@@ -120,6 +120,7 @@ body {
   transform: rotate(45deg);
   top: 31px;
   right: -30px;
+  color: #ffffff;
 }
 .card-two__btn {
   background-color: #3a6ba5;
