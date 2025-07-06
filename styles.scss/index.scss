@@ -1,0 +1,160 @@
+@use 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: #141b1c;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.price-tibles {
+  display: flex;
+  column-gap: 18px;
+  margin: auto;
+}
+
+.price-card {
+  background-color: #334247;
+  max-width: 380px;
+  min-height: 770px;
+
+  &__title {
+    width: 106px;
+    height: 67px;
+    margin: 32px 137px 34px 137px;
+    text-align: center;
+
+    &-name {
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: bold;
+      color: variables.$color-white;
+      margin: 0;
+    }
+    &-subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      color: variables.$color-white;
+    }
+  }
+
+  &__price-text {
+    line-height: 105px;
+    color: variables.$color-white;
+    font-weight: bold;
+    font-size: 55px;
+  }
+
+  &__description {
+    margin: 40px 26px;
+    font-weight: light;
+    font-size: 15px;
+    color: variables.$color-white;
+    text-align: center;
+
+    &-text {
+      line-height: 18px;
+    }
+  }
+  &__options-list {
+    list-style: none;
+    color: variables.$color-white;
+    line-height: 50px;
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+  li:nth-child(odd) {
+    background-color: #2a3438;
+  }
+
+  li img {
+    width: 15px;
+    height: 13px;
+    margin: 0 22px 0 22px;
+  }
+
+  &__order-btn {
+    width: 156px;
+    height: 40px;
+    background-color: #5bb189;
+    color: variables.$color-white;
+    border: none;
+    border-radius: 20px;
+    font-weight: regular;
+    font-size: 14px;
+    margin: 39px 112px 40px;
+    display: block;
+    padding: 0;
+  }
+}
+// card-one -------------------------------------------
+
+.price-card:nth-child(1) .price-card__price {
+  width: 100%;
+  min-height: 105px;
+  background-color: #5bb189;
+  text-align: center;
+}
+
+// card-two -------------------------------------------
+
+.price-card:nth-child(2) .price-card__price {
+  background-color: #3a6ba5;
+  text-align: center;
+}
+
+.price-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+}
+.price-card:nth-child(2) .price-card__title {
+  width: 171px;
+  height: 67px;
+  margin: 32px 104px 34px 105px;
+}
+
+.price-card:nth-child(2) .card-two__promotion {
+  position: absolute;
+  height: 25px;
+  width: 147px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgba(220, 63, 69, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  top: 31px;
+  right: -30px;
+  color: variables.$color-white;
+}
+
+.price-card:nth-child(2) .price-card__order-btn {
+  background-color: #3a6ba5;
+}
+
+// card-three -----------------------------------
+
+.price-card:nth-child(3) .price-card__price {
+  background-color: #ec632a;
+  text-align: center;
+}
+
+.price-card:nth-child(3) .price-card__title {
+  width: 183px;
+  height: 67px;
+  margin: 32px 98px 34px 99px;
+}
+
+.price-card:nth-child(3) .price-card__order-btn {
+  background-color: #ec632a;
+}
