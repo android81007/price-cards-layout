@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 * {
   box-sizing: border-box;
@@ -39,6 +39,7 @@ body {
       color: variables.$color-white;
       margin: 0;
     }
+
     &-subtitle {
       font-size: 20px;
       line-height: 24px;
@@ -64,6 +65,7 @@ body {
       line-height: 18px;
     }
   }
+
   &__options-list {
     list-style: none;
     color: variables.$color-white;
@@ -116,6 +118,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .price-card:nth-child(2) .price-card__title {
   width: 171px;
   height: 67px;
