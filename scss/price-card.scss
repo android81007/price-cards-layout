@@ -1,34 +1,130 @@
 @use "variables";
-// card-one -------------------------------------------
+.price-card {
+  background-color: #334247;
+  max-width: 380px;
+  min-height: 770px;
 
-.price-card:nth-child(1) {
-  .price-card__price {
-    width: 100%;
-    min-height: 105px;
-    background-color: #5bb189;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: bold;
+    color: variables.$color-white;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: variables.$color-white;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px;
+    color: variables.$color-white;
+    font-weight: bold;
+    font-size: 55px;
+    margin-top: 35px;
+
+    &_green {
+      background-color: variables.$green-color;
+    }
+    &_blue {
+      background-color: variables.$blue-color;
+    }
+    &_orange {
+      background-color: variables.$orange-color;
+    }
+  }
+
+  &__description {
+    margin: 40px 26px;
+    font-weight: light;
+    font-size: 15px;
+    color: variables.$color-white;
     text-align: center;
   }
-}
-// card-two -------------------------------------------
 
-.price-card:nth-child(2) {
-  .price-card__price {
-    background-color: #3a6ba5;
-    text-align: center;
+  &__options-list {
+    list-style: none;
+    color: variables.$color-white;
+    line-height: 50px;
+    padding-left: 0;
+    font-size: 15px;
+  }
+
+  &__list-item {
+    padding-left: 59px;
+    position: relative;
+  }
+
+  &__list-item:nth-child(odd) {
+    background-color: #2a3438;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    display: block;
+    top: 19px;
+    left: 22px;
+
+    &_green {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png)
+        center no-repeat;
+    }
+    &_blue {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png)
+        center no-repeat;
+    }
+    &_orange {
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png)
+        center no-repeat;
+    }
+  }
+
+  &__order-btn {
+    width: 156px;
+    height: 40px;
+
+    color: variables.$color-white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 39px 112px 40px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+
+    &_green {
+      background-color: variables.$green-color;
+    }
+
+    &_blue {
+      background-color: variables.$blue-color;
+    }
+
+    &_orange {
+      background-color: variables.$orange-color;
+    }
   }
 }
+
 .price-card:nth-child(2) {
   position: relative;
   overflow: hidden;
 }
 
-.price-card:nth-child(2) {
-  .price-card__title {
-    width: 171px;
-    height: 67px;
-    margin: 32px 104px 34px 105px;
-  }
-}
 .price-card:nth-child(2) {
   .card-two__promotion {
     position: absolute;
@@ -44,30 +140,5 @@
     top: 31px;
     right: -30px;
     color: variables.$color-white;
-  }
-}
-.price-card:nth-child(2) {
-  .price-card__order-btn {
-    background-color: #3a6ba5;
-  }
-}
-// card-three -----------------------------------
-
-.price-card:nth-child(3) {
-  .price-card__price {
-    background-color: #ec632a;
-    text-align: center;
-  }
-}
-.price-card:nth-child(3) {
-  .price-card__title {
-    width: 183px;
-    height: 67px;
-    margin: 32px 98px 34px 99px;
-  }
-}
-.price-card:nth-child(3) {
-  .price-card__order-btn {
-    background-color: #ec632a;
   }
 }
