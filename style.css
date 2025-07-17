@@ -11,7 +11,7 @@
   line-height: 43px;
   font-weight: bold;
   color: #ffffff;
-  margin-top: 28px;
+  margin-top: 32px;
   margin-bottom: 0;
 }
 .price-card__subtitle {
@@ -30,7 +30,7 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 55px;
-  margin-top: 35px;
+  margin-top: 31px;
 }
 .price-card__price_green {
   background-color: #5bb189;
